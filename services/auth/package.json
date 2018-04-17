@@ -1,0 +1,36 @@
+{
+  "name": "chatter_app_auth",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "dev": "nodemon server.js",
+    "test": "mocha --timeout=10000 --require ./test --colors --exit ./test/**/*.spec.js",
+    "prod": "node server.js"
+  },
+  "author": "pickyDude",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "bluebird": "^3.5.1",
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "jsonwebtoken": "^8.2.0",
+    "mongoose": "^5.0.10",
+    "morgan": "^1.9.0",
+    "passport": "^0.4.0",
+    "passport-jwt": "^4.0.0"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "chai-http": "^3.0.0",
+    "eslint": "^4.18.1",
+    "eslint-plugin-node": "^6.0.1",
+    "mocha": "^5.0.1",
+    "sinon": "^4.4.2",
+    "sinon-chai": "^2.14.0"
+  },
+  "engines": {
+    "node": ">=8.9.1"
+  }
+}

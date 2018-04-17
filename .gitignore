@@ -1,0 +1,9 @@
+/services/auth/node_modules
+/services/auth/yarn-error.log
+/services/chat/node_modules
+/services/chat/yarn-error.log
+/services/web/node_modules
+/services/web/public/*.js
+/services/web/public/*.css
+/services/web/public/*.html
+/services/web/yarn-error.log

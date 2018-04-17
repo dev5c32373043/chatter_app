@@ -1,0 +1,25 @@
+@import '../../node_modules/flat-ui/css/flat-ui';
+@import 'auth';
+@import 'chat';
+@import 'toast';
+@import 'loader';
+@import 'scrollbar';
+@import 'notFoundPage';
+
+body {
+  background-color: $dark;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+}
+
+#root {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  align-items: center;
+}

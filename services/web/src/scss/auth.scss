@@ -1,0 +1,31 @@
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  padding: 5%;
+  background-color: white;
+  h2 {
+    align-self: center;
+    text-transform: capitalize;
+  }
+  input {
+    width: 250px;
+    max-height: 20px;
+  }
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    label.error {
+      font-size: 14px;
+      color: red;
+    }
+  }
+  .btn-group {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.btn-logout {
+  position: absolute;
+  right: 0;
+}

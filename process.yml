@@ -1,0 +1,33 @@
+apps:
+  - script: services/auth/server.js
+    name: auth-service
+    exec_mode: cluster
+    instances: 2
+    watch: true
+    env:
+      NODE_ENV: development
+    env_test:
+      NODE_ENV: test
+    env_production:
+      NODE_ENV: production
+  - script: services/chat/server.js
+    name: chat-service
+    watch: true
+    env:
+      NODE_ENV: development
+    env_test:
+      NODE_ENV: test
+    env_production:
+      NODE_ENV: production
+  - script: npm
+    args: run dev
+    cwd: services/web
+    name: web-service
+    exec_mode: cluster
+    instances: 2
+    env:
+      NODE_ENV: development
+    env_test:
+      NODE_ENV: test
+    env_production:
+      NODE_ENV: production
